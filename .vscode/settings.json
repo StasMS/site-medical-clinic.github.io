@@ -1,0 +1,8 @@
+{
+    "json.schemas": [],
+    "formattingToggle.affects": [
+        "formatOnPaste",
+        "formatOnSave",
+        "formatOnType"
+    ]
+}

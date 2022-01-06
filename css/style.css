@@ -7,6 +7,104 @@
   --main-font-family: Gilroy, sans-serif;
 }
 
+*,
+* ::after,
+* ::before {
+  box-sizing: border-box;
+}
+
 body {
   font-weight: 500;
+  /* font-family: 'Gilroy-Bold', sans-serif;
+  font-family: 'Gilroy-Heavy', sans-serif;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif; */
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.container {
+  width: 1295px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+.row,
+.nav,
+.menu,
+.contact {
+  display: flex;
+}
+
+.header .row {
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  color: var(--text-color-primary);
+}
+
+.bcg-primary {
+  background-color: var(--background-primary);
+}
+
+.bcg-secondary {
+  background-color: var(--background-secondary);
+}
+
+.contact li {
+  margin-left: 60px;
+}
+
+.menu {
+  background-color: var(--background-primary);
+  align-items: center;
+}
+
+.container .link {
+  color: var(--text-color-secondary);
+}
+
+.menu .link {
+  color: var(--text-color-primary);
+  margin-left: 62px;
+}
+
+.contact li:first-child {
+  margin-left: 0;
+}
+
+.button-show {
+  padding: 13px 15px 11px 51px;
+  background-color: var(--background-secondary);
+  color: var(--text-color-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.social-list {
+  display: flex;
+}
+
+.header-top-row {
+  padding: 17px 0;
+  align-items: center;
+}
+
+.header-bottom-row {
+  padding: 24px 0;
+  justify-content: space-between;
+}
+
+/*Запись на прием*/
+.btn-sign {
+  color: var(--text-color-secondary);
+  background-color: var(--text-color-primary);
+  padding: 9px 15px 10px;
+  margin-right: 10px;
 }
